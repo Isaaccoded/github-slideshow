@@ -12,6 +12,120 @@
 <!-- Theme used for syntax highlighting of code -->
 <link rel="stylesheet" href="{{site.baseurl}}/node_modules/reveal.js/lib/css/monokai.css">
 
+<style>
+  .reveal .slides section.home-hero {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #ffffff 0%, #f5f7fb 100%);
+    border: 1px solid rgba(11, 22, 44, 0.1);
+    box-shadow: 0 24px 60px rgba(6, 15, 30, 0.2);
+    text-align: left;
+    color: #0f1b2d;
+  }
+
+  .reveal .slides section.home-hero .eyebrow {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #0f4ac6;
+    background: #e9f0ff;
+  }
+
+  .reveal .slides section.home-hero h2 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.3rem);
+    line-height: 1.08;
+    color: #111827;
+  }
+
+  .reveal .slides section.home-hero .lead {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #45556f;
+    max-width: 760px;
+  }
+
+  .reveal .slides section.home-hero .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .reveal .slides section.home-hero .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 1.25rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .reveal .slides section.home-hero .hero-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .reveal .slides section.home-hero .hero-btn-primary {
+    background: #0f4ac6;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(15, 74, 198, 0.25);
+  }
+
+  .reveal .slides section.home-hero .hero-btn-ghost {
+    border: 1px solid #c9d4ea;
+    color: #1e2d44;
+    background: #ffffff;
+  }
+
+  .reveal .slides section.home-hero .hero-stats {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .reveal .slides section.home-hero .hero-stats article {
+    padding: 0.95rem;
+    border: 1px solid #d7dfef;
+    border-radius: 14px;
+    background: #ffffff;
+  }
+
+  .reveal .slides section.home-hero .hero-stats strong {
+    display: block;
+    font-size: 1.05rem;
+    color: #0f1b2d;
+  }
+
+  .reveal .slides section.home-hero .hero-stats span {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.86rem;
+    color: #5a6980;
+  }
+
+  @media (max-width: 800px) {
+    .reveal .slides section.home-hero {
+      padding: 1.5rem;
+    }
+
+    .reveal .slides section.home-hero .hero-stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
 <!-- Printing and PDF exports -->
 <script>
 	var link = document.createElement( 'link' );
